@@ -1,0 +1,81 @@
+/*-- CUSTOM RADIO BUTTON QUIZ --*/
+#quiz p {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: solid 1px #ccc;
+    margin: 2px 0px;
+    padding: 15px 0px 2px 0px;
+}
+
+#quiz .rb {
+padding: 16px 0;
+text-align: center;
+background: rgba(255,255,255,.03);
+border-radius: .3em;
+}
+
+#quiz .rb-tab {
+display: inline-block;
+position: relative;
+width: 20%;
+}
+
+#quiz .rb-txt {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 18px;
+color: #000000;
+}
+
+#quiz .rb-spot {
+position: absolute;
+width: 40px;
+height: 40px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: transparent;
+border: 2px solid #AAAAAA;
+border-radius: 100%;
+cursor: pointer;
+transition: ease .5s;
+}
+
+#quiz .rb-tab-active .rb-spot {
+background: #DDDDDD;
+border: 2px solid #ff3c41;
+}
+
+/* Submit Button */
+#quiz .button-box {
+padding: 10px 0;
+text-align: left;
+}
+
+#quiz button {
+    display: inline-block;
+    width: 20%;
+    margin-top: 1.2em;
+    padding: 1em;
+    max-width: 220px;
+    font-size: .9em;
+    color: #e40000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    background: white;
+    border: solid 1px;
+    outline: none;
+    border-radius: 3px;
+    transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#quiz button:hover {
+ color: #ffffff;
+ background-color: #e40000;
+}
+/*-- CUSTOM RADIO BUTTON QUIZ END --*/
