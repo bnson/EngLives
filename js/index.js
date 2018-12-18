@@ -5,7 +5,11 @@ var ogTitle = "";
 var ogDescription = "";
 var ogImage = "";
 var score = 0;
-
+//-- QUIZ FUNCTION -----------------
+function resetQuiz() {
+  $(".rb-tab").removeClass("rb-tab-active");
+}
+//--
 //Switcher function:
 $(".rb-tab").click(function(){
   //Spot switcher:
@@ -59,11 +63,11 @@ function debug(){
  $("#modal1Bot").html("Tao cạn lời...");
  }
 //-------------
-var wLink = "https://englives.blogspot.com/p/messages.html?parameters=body:" + score + "&amp;title=Free Test Online - ETS Toeic Test 1000 - Test 1 - Part 1 - Listening Test";
+//var wLink = "https://englives.blogspot.com/p/messages.html?parameters=body:" + score + "&amp;title=Free Test Online - ETS Toeic Test 1000 - Test 1 - Part 1 - Listening Test";
 //var wLink = "https://englives.blogspot.com/2018/12/free-test-online-ets-toeic-test-1000.html";
-var shareDiv = $("#shareDiv").html();
-shareDiv = shareDiv.replace("?1",wLink);
-$("#shareDiv").html(shareDiv);
+//var shareDiv = $("#shareDiv").html();
+//shareDiv = shareDiv.replace("?1",wLink);
+//$("#shareDiv").html(shareDiv);
 //-------------
 
  $('[data-remodal-id=modal]').remodal();  
