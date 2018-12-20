@@ -38,15 +38,18 @@ function debug(){
   var debug = "";
   var correct = 0;
   var totalQuestion = survey.length;
-  console.log(totalQuestion);
   //var score = 0;
   for (i=0; i<totalQuestion; i++) {
- if (survey[i][1] != null && survey[i][1]*1 == 1) {
-  correct = correct + 1
- }
-    //debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+    if (survey[i][1] != null && survey[i][1]*1 == 1) {
+      correct = correct + 1
+    }
+    debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
   };
-  
+
+  console.log(correct);		
+  console.log(totalQuestion);	
+  console.log(debug);		
+	
   score = Math.round(correct/totalQuestion*100);
   $("#modal1Desc").html(score + "%")
   //alert(result + "%");
