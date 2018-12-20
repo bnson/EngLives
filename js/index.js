@@ -38,6 +38,7 @@ function debug(){
   var debug = "";
   var correct = 0;
   var totalQuestion = survey.length;
+  console.log(totalQuestion);
   //var score = 0;
   for (i=0; i<totalQuestion; i++) {
  if (survey[i][1] != null && survey[i][1]*1 == 1) {
