@@ -1,4 +1,4 @@
-//-- GLOBAL ------------
+//-- GLOBAL -------------
 var survey = []; //Bidimensional array: [ [1,3], [2,4] ]
 var ogUrl = "";
 var ogTitle = "";
