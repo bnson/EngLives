@@ -6,26 +6,25 @@ var ogDescription = "";
 var ogImage = "";
 var score = 0;
 //-- TRANSLATE FUNCTION ------------
-function getTranslate(pText) {
+function setTranslate001(pText, eResult) {
 	var texTransfer = pText;
 	var customerLanguage = getCustomerLanguage();
 	var trLink = "https://us-central1-app-of-the-day-9a9f6.cloudfunctions.net/translate?from=auto&to=";
-	
+	var result = 'Error translate! Please try refesh page.';
 	texTransfer = texTransfer.replace(/’/gi,"'");
 	texTransfer = texTransfer.replace(/“/gi,"\"");
 	texTransfer = texTransfer.replace(/”/gi,"\"");
 	texTransfer = texTransfer.replace(/—/gi,"-");
-	texTransfer = texTransfer.replace(/…/gi,"...");	
+	texTransfer = texTransfer.replace(/…/gi,"..."); 
 	console.log('Text Translate:' + texTransfer);
-	
-	trLink = trLink + lang.toLowerCase() + "&text=" + texTransfer;
-	
+
+	trLink = trLink + customerLanguage.toLowerCase() + "&text=" + texTransfer;
+
 	fetch(trLink).then(function(response) {
-		return response.text()
+		return response.text();
 	}).then(function(text) {
-		return text;
-  	})	
-	return 'Error translate! Please try refesh page.';
+		eResult.html('<br/>' + text);
+	})
 }
 
 function getCustomerLanguage() {
@@ -36,74 +35,75 @@ function getCustomerLanguage() {
 }
 //-- QUIZ FUNCTION -----------------
 function resetQuiz() {
-  $(".rb-tab").removeClass("rb-tab-active");
+	$(".rb-tab").removeClass("rb-tab-active");
 }
 //--
 //Switcher function:
 $(".rb-tab").click(function(){
-  //Spot switcher:
-  $(this).parent().find(".rb-tab").removeClass("rb-tab-active");
-  $(this).addClass("rb-tab-active");
+	//Spot switcher:
+	$(this).parent().find(".rb-tab").removeClass("rb-tab-active");
+	$(this).addClass("rb-tab-active");
 });
 
 //Save data:
 $(".trigger").click(function(){
-  //Empty array:
-  survey = [];
-  //Push data:
-  for (i=1; i<=$(".rb").length; i++) {
-    var rb = "rb" + i;
-    var rbValue = parseInt($("#rb-"+i).find(".rb-tab-active").attr("data-value"));
-    //Bidimensional array push:
-    survey.push([i, rbValue]); //Bidimensional array: [ [1,3], [2,4] ]
-  };
-  //Debug:
-  debug();
+	//Empty array:
+	survey = [];
+	//Push data:
+	for (i=1; i<=$(".rb").length; i++) {
+		var rb = "rb" + i;
+		var rbValue = parseInt($("#rb-"+i).find(".rb-tab-active").attr("data-value"));
+		//Bidimensional array push:
+		survey.push([i, rbValue]); //Bidimensional array: [ [1,3], [2,4] ]
+	};
+	//Debug:
+	debug();
 });
 
 //Debug:
 
 function debug(){
-  var debug = "";
-  var correct = 0;
-  var totalQuestion = survey.length;
-  //var score = 0;
-  for (i=0; i<totalQuestion; i++) {
-    if (survey[i][1] != null && survey[i][1]*1 == 1) {
-      correct = correct + 1
-    }
-    debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
-  };
-
-  console.log(correct);		
-  console.log(totalQuestion);	
-  console.log(debug);		
+	var debug = "";
+	var correct = 0;
+	var totalQuestion = survey.length;
+	//var score = 0;
 	
-  score = Math.round(correct/totalQuestion*100);
-  $("#modal1Desc").html(score + "%")
-  //alert(result + "%");
-  
- $("#modal1Bot").html("");
- if (score == 100) {
- $("#modal1Bot").html("You are the best. (♥I love you♥)");
- } else if (score < 100 && score >= 80) {
- $("#modal1Bot").html("You are Great. (♦I like you♦)");
- } else if (score < 80 && score >= 50) {
- $("#modal1Bot").html("You need try again. (!Come on, you can do it!)");
- } else if (score < 50 && score >= 1) {
- $("#modal1Bot").html("This is not the place for you. (/!\\Try find other love/!\\)");
- } else {
- $("#modal1Bot").html("Tao cạn lời...");
- }
-//-------------
-//var wLink = "https://englives.blogspot.com/p/messages.html?parameters=body:" + score + "&amp;title=Free Test Online - ETS Toeic Test 1000 - Test 1 - Part 1 - Listening Test";
-//var wLink = "https://englives.blogspot.com/2018/12/free-test-online-ets-toeic-test-1000.html";
-//var shareDiv = $("#shareDiv").html();
-//shareDiv = shareDiv.replace("?1",wLink);
-//$("#shareDiv").html(shareDiv);
-//-------------
+	for (i=0; i<totalQuestion; i++) {
+		if (survey[i][1] != null && survey[i][1]*1 == 1) {
+			correct = correct + 1
+		}
+		debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+	};
 
- $('[data-remodal-id=modal]').remodal();  
+	console.log(correct);		
+	console.log(totalQuestion);	
+	console.log(debug);		
+
+	score = Math.round(correct/totalQuestion*100);
+	$("#modal1Desc").html(score + "%")
+	//alert(result + "%");
+
+	$("#modal1Bot").html("");
+	if (score == 100) {
+		$("#modal1Bot").html("You are the best. (♥I love you♥)");
+	} else if (score < 100 && score >= 80) {
+		$("#modal1Bot").html("You are Great. (♦I like you♦)");
+	} else if (score < 80 && score >= 50) {
+		$("#modal1Bot").html("You need try again. (!Come on, you can do it!)");
+	} else if (score < 50 && score >= 1) {
+		$("#modal1Bot").html("This is not the place for you. (/!\\Try find other love/!\\)");
+	} else {
+		$("#modal1Bot").html("Tao cạn lời...");
+	}
+	//-------------
+	//var wLink = "https://englives.blogspot.com/p/messages.html?parameters=body:" + score + "&amp;title=Free Test Online - ETS Toeic Test 1000 - Test 1 - Part 1 - Listening Test";
+	//var wLink = "https://englives.blogspot.com/2018/12/free-test-online-ets-toeic-test-1000.html";
+	//var shareDiv = $("#shareDiv").html();
+	//shareDiv = shareDiv.replace("?1",wLink);
+	//$("#shareDiv").html(shareDiv);
+	//-------------
+
+	$('[data-remodal-id=modal]').remodal();  
   
 };
 //-------------------------------------------------------
