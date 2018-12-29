@@ -1,10 +1,39 @@
-//-------------
+//-- GLOBAL ------------
 var survey = []; //Bidimensional array: [ [1,3], [2,4] ]
 var ogUrl = "";
 var ogTitle = "";
 var ogDescription = "";
 var ogImage = "";
 var score = 0;
+//-- TRANSLATE FUNCTION ------------
+function getTranslate(pText) {
+	var texTransfer = pText;
+	var customerLanguage = getCustomerLanguage();
+	var trLink = "https://us-central1-app-of-the-day-9a9f6.cloudfunctions.net/translate?from=auto&to=";
+	
+	texTransfer = texTransfer.replace(/’/gi,"'");
+	texTransfer = texTransfer.replace(/“/gi,"\"");
+	texTransfer = texTransfer.replace(/”/gi,"\"");
+	texTransfer = texTransfer.replace(/—/gi,"-");
+	texTransfer = texTransfer.replace(/…/gi,"...");	
+	console.log('Text Translate:' + texTransfer);
+	
+	trLink = trLink + lang.toLowerCase() + "&text=" + texTransfer;
+	
+	fetch(trLink).then(function(response) {
+		return response.text()
+	}).then(function(text) {
+		return text;
+  	})	
+	return 'Error translate! Please try refesh page.';
+}
+
+function getCustomerLanguage() {
+	var lang = $('input:checked').val() + '';
+	setCookie('Language', lang, 60);
+	//console.log('Language:' + lang);
+	return lang;
+}
 //-- QUIZ FUNCTION -----------------
 function resetQuiz() {
   $(".rb-tab").removeClass("rb-tab-active");
