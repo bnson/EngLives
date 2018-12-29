@@ -5,6 +5,52 @@ var ogTitle = "";
 var ogDescription = "";
 var ogImage = "";
 var score = 0;
+//--
+var englishShow = false;
+var translateShow = true;
+
+//-- LOAD PAGE ---------------------
+$(document).ready(function() {
+
+	var englishShow = false;
+	var translateShow = true;
+
+	$("#bShowHideEnglish").click(function() {
+		if (!englishShow) {
+			$("#bShowHideEnglish").text('Show English');
+			$("#bShowHideEnglish").addClass('btn-control-active');
+			$(".englishText").addClass('hidden');
+			englishShow = true;
+		} else {
+			$("#bShowHideEnglish").text('Hide English');
+			$("#bShowHideEnglish").removeClass('btn-control-active');
+			$(".englishText").removeClass('hidden');
+			englishShow = false;
+		}
+	});
+
+	$("#bShowHideTranslate").click(function() {
+		if (!translateShow) {
+			$("#bShowHideTranslate").text('Show Translate');
+			$("#bShowHideTranslate").addClass('btn-control-active');
+			$(".translateText").addClass('hidden');
+			translateShow = true;
+		} else {
+
+			$(".englishText").each(function() {
+				setTranslate001($(this).text(), $(this).next());
+			});
+
+			$("#bShowHideTranslate").text('Hide Translate');
+			$("#bShowHideTranslate").removeClass('btn-control-active');
+			$(".translateText").removeClass('hidden');
+			translateShow = false;
+		}
+
+	});
+
+});
+
 //-- TRANSLATE FUNCTION ------------
 function setTranslate001(pText, eResult) {
 	var texTransfer = pText;
