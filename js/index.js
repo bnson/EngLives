@@ -162,7 +162,7 @@ function sharefbimage() {
 	ogImage = "";
 
 	switch(score) {
-		case 0: ogImage = "https://2.bp.blogspot.com/-9SDCOh0Ok7s/XCh6r26qu2I/AAAAAAAABN8/pmcUD8dRTcQhdyed0PIpekBLqi_B2f-OgCLcBGAs/s600/0.png"; break;
+		case 0: ogImage = "https://4.bp.blogspot.com/-3tdRjvQePIc/XCiMWGkKIQI/AAAAAAAABVE/bXkCjE5Vt4AEffcghyReR98V7qwSA4c8gCLcBGAs/s1600/0.png"; break;
 		case 1: ogImage = "https://1.bp.blogspot.com/-yAviMYWesWU/XCh6r_anRyI/AAAAAAAABOA/9YqMmR3N1xgkzeotYVOuvJULeASnq1KYgCLcBGAs/s600/1.png"; break;
 		case 2: ogImage = "https://4.bp.blogspot.com/-LMfwxxFY2eY/XCh6vusVpwI/AAAAAAAABOs/POYsqxWquHQW-lyD4Jaz0uZ0BcEa3TJJQCLcBGAs/s600/2.png"; break;
 		case 3: ogImage = "https://1.bp.blogspot.com/-7xxoKbxlrNM/XCh6zGCiD-I/AAAAAAAABPY/ycNYS25nH7ccX21vyF_0Q-4WC77goX2SwCLcBGAs/s600/3.png"; break;
