@@ -285,6 +285,8 @@ function sharefbimage() {
 				'og:title': ogTitle,
 				'og:description': ogDescription,
 				'og:image': ogImage,
+				'og:image:width': 600,
+				'og:image:height': 315
 			},
 		}),
 	}, function (response) {});
