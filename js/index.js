@@ -162,41 +162,108 @@ function sharefbimage() {
 	ogImage = "";
 
 	switch(score) {
-		case 0:
-			ogImage = "https://1.bp.blogspot.com/-KBEXvL64a2c/XBkO6rWKV9I/AAAAAAAABMQ/nsE5htq4GjIzAXgoApcfk0NkG2uoUqsGgCKgBGAs/s1600/t1_ys_0.png";
-			break;
-		case 10:
-			ogImage = "https://2.bp.blogspot.com/-Vjpt-zfVx64/XBkO6iaUQyI/AAAAAAAABMQ/2OjXdlcL8sAq96fVg0l1bcXMQJN-Jor4ACKgBGAs/s1600/t1_ys_10.png";
-			break;
-		case 20:
-			ogImage = "https://1.bp.blogspot.com/-acRdtE9rnW8/XBkO6nYUBfI/AAAAAAAABMQ/-zTfCuEncJIb56n2EUBw4oue48hVQZF2QCKgBGAs/s1600/t1_ys_20.png";
-			break;
-		case 30:
-			ogImage = "https://4.bp.blogspot.com/-lKZg4nHpsaY/XBkO6q5XYyI/AAAAAAAABMQ/N0gwHq3zmncviXNG0UL-LHp5i-66t1XjACKgBGAs/s1600/t1_ys_30.png";
-			break;
-		case 40:
-			ogImage = "https://1.bp.blogspot.com/-hWMaBBaPvu4/XBkO6ptH7fI/AAAAAAAABMQ/fyv1lLYOiPI8krAcLni_sxOqDp2Ulf2JwCKgBGAs/s1600/t1_ys_40.png";
-			break;
-		case 50:
-			ogImage = "https://3.bp.blogspot.com/-aPgLB7BOKgA/XBkO6v3RarI/AAAAAAAABMQ/WXAwdhKfWqEh3GjJX0Hljbk2dKmq3PBKQCKgBGAs/s1600/t1_ys_50.png";
-			break;		
-		case 60:
-			ogImage = "https://1.bp.blogspot.com/-L5_BJRpN7Aw/XBkO6qP-prI/AAAAAAAABMQ/VR_WhBbXbuQwh-0lzY977fMgY8EfBa_ZQCKgBGAs/s1600/t1_ys_60.png";
-			break;
-		case 70:
-			ogImage = "https://4.bp.blogspot.com/-JVyUbuZTNb4/XBkO6iLEDAI/AAAAAAAABMQ/HRJ9rAKE6UkRNkSr9depi63hkfViu-boQCKgBGAs/s1600/t1_ys_70.png";
-			break;
-		case 80:
-			ogImage = "https://2.bp.blogspot.com/-wctQCBWCX-g/XBkO6jl3sHI/AAAAAAAABMQ/qdFeYIH1DLInNVfga682XmUiwSdMQ8LkQCKgBGAs/s1600/t1_ys_80.png";
-			break;
-		case 90:
-			ogImage = "https://1.bp.blogspot.com/-JASQxBTl58c/XBkO6rdFXRI/AAAAAAAABMQ/asvzKav0hg47ikt1r7h8rGbhIKlggOpawCKgBGAs/s1600/t1_ys_90.png";
-			break;
-		case 100:
-			ogImage = "https://4.bp.blogspot.com/-qc1znkCVczk/XBkO6twprfI/AAAAAAAABMQ/l0mCMNiTpFEXAATJin_C35GHK-Au1yjFwCKgBGAs/s1600/t1_ys_100.png";
-			break;		
-		default:
-			ogImage = "";
+		case 0: ogImage = "https://2.bp.blogspot.com/-9SDCOh0Ok7s/XCh6r26qu2I/AAAAAAAABN8/pmcUD8dRTcQhdyed0PIpekBLqi_B2f-OgCLcBGAs/s320/0.png"; break;
+		case 1: ogImage = "https://1.bp.blogspot.com/-yAviMYWesWU/XCh6r_anRyI/AAAAAAAABOA/9YqMmR3N1xgkzeotYVOuvJULeASnq1KYgCLcBGAs/s320/1.png"; break;
+		case 2: ogImage = "https://4.bp.blogspot.com/-LMfwxxFY2eY/XCh6vusVpwI/AAAAAAAABOs/POYsqxWquHQW-lyD4Jaz0uZ0BcEa3TJJQCLcBGAs/s320/2.png"; break;
+		case 3: ogImage = "https://1.bp.blogspot.com/-7xxoKbxlrNM/XCh6zGCiD-I/AAAAAAAABPY/ycNYS25nH7ccX21vyF_0Q-4WC77goX2SwCLcBGAs/s320/3.png"; break;
+		case 4: ogImage = "https://4.bp.blogspot.com/-oB2IJi9UYnE/XCh62P_0eII/AAAAAAAABQE/-J4Em00zJZALhWy_q4mfuyXkGIafnpbtgCLcBGAs/s320/4.png"; break;
+		case 5: ogImage = "https://3.bp.blogspot.com/-C42-zVKOdwU/XCh65pd4UuI/AAAAAAAABQw/b2wVOcY9K9gOg9xIHfTkwiRbJ15ctUhOgCLcBGAs/s320/5.png"; break;
+		case 6: ogImage = "https://4.bp.blogspot.com/-kLdkMgnLDNU/XCh6834dpMI/AAAAAAAABRc/zX9ss1FjrTk6q4J9L0slNMJsEne4sMEdwCLcBGAs/s320/6.png"; break;
+		case 7: ogImage = "https://4.bp.blogspot.com/-NrjMwdi16To/XCh6__w-TbI/AAAAAAAABSI/MRErpWOlEJw_ab2o-VNem0Mm4Nsax6G4ACLcBGAs/s320/7.png"; break;
+		case 8: ogImage = "https://1.bp.blogspot.com/-EqO0b8Bnrvc/XCh7DXMWedI/AAAAAAAABS0/mnxrJwdyUOQDtjK1gLzHhE9WldlCs3EUQCLcBGAs/s320/8.png"; break;
+		case 9: ogImage = "https://1.bp.blogspot.com/-Xxlm1RiCU3U/XCh7GQQqWII/AAAAAAAABTg/qEg7vKDZ-S0UUGxwJKvi2OK18GYEMt5yACLcBGAs/s320/9.png"; break;
+		case 10: ogImage = "https://4.bp.blogspot.com/-gQtIMXEV6O0/XCh6ruLKkxI/AAAAAAAABN4/JRMICjlyyDM76KZhnwjjhc36A8kei9DwgCLcBGAs/s320/10.png"; break;
+		case 11: ogImage = "https://1.bp.blogspot.com/-zdbWFFno2_E/XCh6s1YTuwI/AAAAAAAABOI/7hyordE8-FMvvU1LGL0EMrK2kdh2Jw_pgCLcBGAs/s320/11.png"; break;
+		case 12: ogImage = "https://3.bp.blogspot.com/-7wSdttucJ4Y/XCh6s8ydU0I/AAAAAAAABOM/swqfa8ASW78yvUmcSxCX96YKagAUMEBewCLcBGAs/s320/12.png"; break;
+		case 13: ogImage = "https://1.bp.blogspot.com/-xhgS2OK0zLY/XCh6tQfb65I/AAAAAAAABOQ/yWM2zfArLy4GyAfKXhObUEGOKSfbDK_qwCLcBGAs/s320/13.png"; break;
+		case 14: ogImage = "https://3.bp.blogspot.com/-PuZ7okXj5tI/XCh6t0vJY8I/AAAAAAAABOU/NMNsZm1_ZEAPlijcn7gu7OhJ9-4ZtTUkgCLcBGAs/s320/14.png"; break;
+		case 15: ogImage = "https://1.bp.blogspot.com/-EQc9azl38PU/XCh6t5HiOlI/AAAAAAAABOY/NTV-NTDTDjMe9nlphXKO6x4RRHcLtUBjgCLcBGAs/s320/15.png"; break;
+		case 16: ogImage = "https://1.bp.blogspot.com/-oHfKrCAsWcc/XCh6uHYf2pI/AAAAAAAABOc/dAmgjWMr3U8IDjN7mVB-e1vOjzGPOxWbwCLcBGAs/s320/16.png"; break;
+		case 17: ogImage = "https://4.bp.blogspot.com/-YgyS5yKEMP4/XCh6ujnj77I/AAAAAAAABOg/vBvzY0hOZZsgpP4PdtJQ1RRuZ49_Az8uQCLcBGAs/s320/17.png"; break;
+		case 18: ogImage = "https://3.bp.blogspot.com/-B3CjCiaWdAs/XCh6uuJvhgI/AAAAAAAABOk/tIH84_OJdHgA7fV4YTb1PybDslwhFGfVQCLcBGAs/s320/18.png"; break;
+		case 19: ogImage = "https://2.bp.blogspot.com/-dlXYqk3OFSY/XCh6vCUOtAI/AAAAAAAABOo/h9_0Bk5JT2ArgW69TpcHTYV9aZ56vcOigCLcBGAs/s320/19.png"; break;
+		case 20: ogImage = "https://3.bp.blogspot.com/-WdreIYRCp5A/XCh6vkLxCMI/AAAAAAAABOw/bZYQXIBa4RQEnmHS2Po0LUBC8mYtNlryACLcBGAs/s320/20.png"; break;
+		case 21: ogImage = "https://2.bp.blogspot.com/-HX93MGMQ0c0/XCh6v1IBcSI/AAAAAAAABO0/dKiFQdNvl6Iqv8mw1vVRpaTrl0WTm6_zQCLcBGAs/s320/21.png"; break;
+		case 22: ogImage = "https://4.bp.blogspot.com/-DiHmL-Ne5zc/XCh6wbMsgRI/AAAAAAAABO4/XzFSaomqzt8A93jmzjaGdCyJy0JAd4MNgCLcBGAs/s320/22.png"; break;
+		case 23: ogImage = "https://3.bp.blogspot.com/-8pxLBRc5dCY/XCh6w1Zo-aI/AAAAAAAABO8/qVlQtDaDa9oQ6auhMlNffee4vLsAlNepACLcBGAs/s320/23.png"; break;
+		case 24: ogImage = "https://2.bp.blogspot.com/-vTzbRUdHOq4/XCh6xHrDTtI/AAAAAAAABPA/-4E5GTDkUMYczPDqLuxpcbvybfhi5IoHgCLcBGAs/s320/24.png"; break;
+		case 25: ogImage = "https://2.bp.blogspot.com/-Ezc75uwdJYQ/XCh6xVa1DoI/AAAAAAAABPE/h8PaTPi6KcU0whg_rNIfrsuFD41Mji_ywCLcBGAs/s320/25.png"; break;
+		case 26: ogImage = "https://2.bp.blogspot.com/-ltpyhl7e0dQ/XCh6xh_U8yI/AAAAAAAABPI/N1H1uN9j-xQoca1LVzjsaSex0fBICQCywCLcBGAs/s320/26.png"; break;
+		case 27: ogImage = "https://3.bp.blogspot.com/-Uc65sv7fA0Q/XCh6yAM84tI/AAAAAAAABPM/374KKsUTICk3mCa1HrYKKJQekwG0mA_wQCLcBGAs/s320/27.png"; break;
+		case 28: ogImage = "https://2.bp.blogspot.com/-4yoaC6_G48E/XCh6yDCifSI/AAAAAAAABPQ/RjLQEoIWiGcOjOB08i4ggaRKo67aDhT9wCLcBGAs/s320/28.png"; break;
+		case 29: ogImage = "https://2.bp.blogspot.com/-W0blt179P0w/XCh6ymb2PTI/AAAAAAAABPU/Ym_HRSjvOgcmfeaumFVTrd4adiy9rQTyACLcBGAs/s320/29.png"; break;
+		case 30: ogImage = "https://4.bp.blogspot.com/-w-jwdXmHAok/XCh6zTXWOZI/AAAAAAAABPc/xftkF0Dnp38PIHMmaxy8gwFzkM9xohGLwCLcBGAs/s320/30.png"; break;
+		case 31: ogImage = "https://3.bp.blogspot.com/-M-e2olsaOCI/XCh6zsxWQaI/AAAAAAAABPg/d49MGHOgCfUZ3n39MbQmbfshVaLD20qBQCLcBGAs/s320/31.png"; break;
+		case 32: ogImage = "https://2.bp.blogspot.com/-rBkFavexiok/XCh60FYVc_I/AAAAAAAABPk/7HWzCtirrLsgV-rEJS3Pj3gUfkQPLIuygCLcBGAs/s320/32.png"; break;
+		case 33: ogImage = "https://4.bp.blogspot.com/-PWfEZtv9lB8/XCh60JdKEoI/AAAAAAAABPo/qAgHfAPz-R8W8ejkbLuCe_iIRvu3aPejgCLcBGAs/s320/33.png"; break;
+		case 34: ogImage = "https://2.bp.blogspot.com/-DJjmNLFWjyE/XCh60UOaXEI/AAAAAAAABPs/QUfWckcDYwEn18bdcGwBo-DEESOKFAVRwCLcBGAs/s320/34.png"; break;
+		case 35: ogImage = "https://3.bp.blogspot.com/-uR8ln_NLJQE/XCh606saOqI/AAAAAAAABPw/P__DDM0WjF8rWjqxg4yRxuyveXXkjb3DgCLcBGAs/s320/35.png"; break;
+		case 36: ogImage = "https://3.bp.blogspot.com/-Gmnskf7oB0Y/XCh601nxmqI/AAAAAAAABP0/60XsXdZJBVoItYszemt6d5lUuH5yQxs9gCLcBGAs/s320/36.png"; break;
+		case 37: ogImage = "https://3.bp.blogspot.com/-qXXzj-UBlsU/XCh61HFzz9I/AAAAAAAABP4/h3xgkXMRPnkE8BX3w136st83WE6oZ0z0gCLcBGAs/s320/37.png"; break;
+		case 38: ogImage = "https://3.bp.blogspot.com/-dig6qlUCv1M/XCh61yUR1gI/AAAAAAAABP8/jKa63k0SltcWRI8k3hIMfXYYs3Yxi5VvgCLcBGAs/s320/38.png"; break;
+		case 39: ogImage = "https://3.bp.blogspot.com/-eWpn0-AaacA/XCh610GibRI/AAAAAAAABQA/J2pINrUo3SwJ4SD8Ok605Hb7Hd6WqwTsgCLcBGAs/s320/39.png"; break;
+		case 40: ogImage = "https://4.bp.blogspot.com/-74RqoOstBSA/XCh62hhIpRI/AAAAAAAABQI/sup0ERGQ_Rs7u3OEWlcyrPVuiyHHcOKXACLcBGAs/s320/40.png"; break;
+		case 41: ogImage = "https://1.bp.blogspot.com/-dPnVr2iCtaY/XCh628n2jiI/AAAAAAAABQM/u2yGLwWqKF8Q1LE9FRkfIMg9wJUrxf-KQCLcBGAs/s320/41.png"; break;
+		case 42: ogImage = "https://3.bp.blogspot.com/-ND9CWJjju2U/XCh63F_TDII/AAAAAAAABQQ/zGw46XTKv8gftCQtoiq9fXTW_lyr12J6wCLcBGAs/s320/42.png"; break;
+		case 43: ogImage = "https://3.bp.blogspot.com/-m0YeQ2yIIgs/XCh63gdsluI/AAAAAAAABQU/M3tzMLWwq5IC_VMu90o-nP-NsgffFLt6QCLcBGAs/s320/43.png"; break;
+		case 44: ogImage = "https://1.bp.blogspot.com/-JC8owKQKyKg/XCh63zggnCI/AAAAAAAABQY/t_nVmQOeURU-dtUlRUU29hUC6PmZKwqUACLcBGAs/s320/44.png"; break;
+		case 45: ogImage = "https://4.bp.blogspot.com/-YfLDEclA5mI/XCh64GW9GFI/AAAAAAAABQc/OqubLo0r4NgoEMaEz3Pg4-4TSz7gy66jQCLcBGAs/s320/45.png"; break;
+		case 46: ogImage = "https://2.bp.blogspot.com/-QvrRA2DIE1E/XCh64c3aysI/AAAAAAAABQg/UR1GxouKA5AyYTxkQ7DyFSEht9hdJpBTwCLcBGAs/s320/46.png"; break;
+		case 47: ogImage = "https://4.bp.blogspot.com/-nGBMv3auZWY/XCh64oR6sgI/AAAAAAAABQk/NOTT5g4_3n0dV-ERKS7dVhPjNa4MjCArACLcBGAs/s320/47.png"; break;
+		case 48: ogImage = "https://4.bp.blogspot.com/-pqxe2PdYwbc/XCh64xVUMYI/AAAAAAAABQo/0zj_Lo5mJX46elMUtmAjYd0is8B7uyWmwCLcBGAs/s320/48.png"; break;
+		case 49: ogImage = "https://4.bp.blogspot.com/-5NkoplsLaA4/XCh65HqThWI/AAAAAAAABQs/fCUJeJXSjjYKwQSkbTr2KIga11DUeaWgwCLcBGAs/s320/49.png"; break;
+		case 50: ogImage = "https://3.bp.blogspot.com/-jBkwLb6lHkc/XCh653j9JII/AAAAAAAABQ0/iHbBPebp3Fc-8whWMJ2QkL1aaxMR-82-gCLcBGAs/s320/50.png"; break;
+		case 51: ogImage = "https://2.bp.blogspot.com/-D7Wl_Ufx6_M/XCh66LAB4rI/AAAAAAAABQ4/_QAoBgefl_g2p8YI3-ClrvXHHRDYaMOfwCLcBGAs/s320/51.png"; break;
+		case 52: ogImage = "https://3.bp.blogspot.com/-jHulHVz3QL4/XCh66aF-5zI/AAAAAAAABQ8/jyyexg00ifc7EP-KRs7Mifkv4atnvu4yACLcBGAs/s320/52.png"; break;
+		case 53: ogImage = "https://2.bp.blogspot.com/-p9BGFMkxWVE/XCh662UbnwI/AAAAAAAABRA/zZQEaKBfVJct9m93GbOUHUqeEBTsHkcEQCLcBGAs/s320/53.png"; break;
+		case 54: ogImage = "https://2.bp.blogspot.com/-C_XCQxxc2jA/XCh67DbRqoI/AAAAAAAABRE/OC-Dag1ELS0zMZpk3SaRwaaHupIBz2OIgCLcBGAs/s320/54.png"; break;
+		case 55: ogImage = "https://3.bp.blogspot.com/-gt1h1Kcqjis/XCh67CxDAeI/AAAAAAAABRI/BdipBOjk7oostEvKwloU6blEETHP5y6QACLcBGAs/s320/55.png"; break;
+		case 56: ogImage = "https://4.bp.blogspot.com/-yF3fWHbdV-g/XCh67jSMipI/AAAAAAAABRM/AfwYIdkH2_Q8vqUJo0kUBx6gulctxkuGgCLcBGAs/s320/56.png"; break;
+		case 57: ogImage = "https://1.bp.blogspot.com/-BB3DPHvNpWQ/XCh67ziRDNI/AAAAAAAABRQ/538XD_xvEioDtY9hMHTRUdkUBAfnzqmwQCLcBGAs/s320/57.png"; break;
+		case 58: ogImage = "https://4.bp.blogspot.com/-0K17PnbVlXQ/XCh68FB3t0I/AAAAAAAABRU/kFT75XMNm14uLZXm24cyb2327zCAEb0YQCLcBGAs/s320/58.png"; break;
+		case 59: ogImage = "https://1.bp.blogspot.com/-Q5uxBPs8zec/XCh68UW6snI/AAAAAAAABRY/tNqwE-mslVYzXYVboguk6e7zAJskDaWqwCLcBGAs/s320/59.png"; break;
+		case 60: ogImage = "https://2.bp.blogspot.com/-bqWfc_j612E/XCh69FHcFJI/AAAAAAAABRg/OT-OHALqSxwkb5lS2ZatoioW5XsmVH75ACLcBGAs/s320/60.png"; break;
+		case 61: ogImage = "https://3.bp.blogspot.com/-M-x_tYYFIRc/XCh69QVvZWI/AAAAAAAABRk/L3u1g0T1Vo0XecfmuhdK4u1TTAdOpOMEACLcBGAs/s320/61.png"; break;
+		case 62: ogImage = "https://2.bp.blogspot.com/-fScbVktt7gw/XCh69wVT23I/AAAAAAAABRo/LI5-7BpS_y0Hfkabazo8HFbmrD8YY7rFQCLcBGAs/s320/62.png"; break;
+		case 63: ogImage = "https://4.bp.blogspot.com/-D4df9kyIj-w/XCh692Xk8CI/AAAAAAAABRs/KbONy7tdPWAcoA2J9vhunhhe-AvT2F4tQCLcBGAs/s320/63.png"; break;
+		case 64: ogImage = "https://4.bp.blogspot.com/-p9SPCUooc5Y/XCh6-EUAx0I/AAAAAAAABRw/8f7ue9AVIqAVkJTMdzC096azeOx24Oo8wCLcBGAs/s320/64.png"; break;
+		case 65: ogImage = "https://3.bp.blogspot.com/-5TEnwalV3c8/XCh6-sEvR3I/AAAAAAAABR0/rFKWBpfL-BIvmCOoJDwE93Rubv_DXo0xQCLcBGAs/s320/65.png"; break;
+		case 66: ogImage = "https://2.bp.blogspot.com/-zUCaFqvvjE0/XCh6-vog_WI/AAAAAAAABR4/XZjghCH9TlMT5I8JOqyKOJTZoFDonYpYACLcBGAs/s320/66.png"; break;
+		case 67: ogImage = "https://1.bp.blogspot.com/-RovRZ2aFQf4/XCh6_Cps3pI/AAAAAAAABR8/QXCeXE6HdcY-QGLssoL4_1xMUIyW007XQCLcBGAs/s320/67.png"; break;
+		case 68: ogImage = "https://3.bp.blogspot.com/-IAKV8xOHwXI/XCh6_eKWT5I/AAAAAAAABSA/EryOaogQttQbA1A3i9xaz0p_jL_SGNSsQCLcBGAs/s320/68.png"; break;
+		case 69: ogImage = "https://1.bp.blogspot.com/-4wnZeAjLydo/XCh6_qEOkhI/AAAAAAAABSE/DrPMU9ZShbE8mYjPMCvf4860xhKcZ-XKQCLcBGAs/s320/69.png"; break;
+		case 70: ogImage = "https://3.bp.blogspot.com/-qcsXp2kzpEM/XCh7Ao_RvbI/AAAAAAAABSM/FiEDsqBDD-kIo-Z72evGqlAmJHimfK56wCLcBGAs/s320/70.png"; break;
+		case 71: ogImage = "https://4.bp.blogspot.com/-d3ktlHfW0GA/XCh7AtOPaCI/AAAAAAAABSQ/i4vB8o5vJ7ApUzPcth2LGXwmg2P1dszdQCLcBGAs/s320/71.png"; break;
+		case 72: ogImage = "https://2.bp.blogspot.com/-M2TUIh4Clfs/XCh7AnzM4FI/AAAAAAAABSU/IJWMmntyWBQL0scRj8fE2ek7Xrr-ZiAdACLcBGAs/s320/72.png"; break;
+		case 73: ogImage = "https://1.bp.blogspot.com/-Z2UYHOlWYag/XCh7BlGpaLI/AAAAAAAABSY/3fKlVDnZqC8eViTjbqx1FfcRZORZNuUfACLcBGAs/s320/73.png"; break;
+		case 74: ogImage = "https://3.bp.blogspot.com/-O1lt4_VsUS4/XCh7Bo6NQGI/AAAAAAAABSc/NtrhXdKpUZE8P7q-cDnoqWmfNt65cWOJQCLcBGAs/s320/74.png"; break;
+		case 75: ogImage = "https://2.bp.blogspot.com/-__JAGFo4qNM/XCh7B_L6dzI/AAAAAAAABSg/baQydx9QJpIOj8EpDnA4pirAsqe8QSK7gCLcBGAs/s320/75.png"; break;
+		case 76: ogImage = "https://4.bp.blogspot.com/-xJVKZj3qRD4/XCh7CUXmIGI/AAAAAAAABSk/pMwk1A5luzYPdYetWg3hLIvte7cZqZdOACLcBGAs/s320/76.png"; break;
+		case 77: ogImage = "https://2.bp.blogspot.com/-kqJtZar3Ggk/XCh7CecfZzI/AAAAAAAABSo/IXzVWDR_U9EScRwBDdcFl4iN9gefQcWoACLcBGAs/s320/77.png"; break;
+		case 78: ogImage = "https://4.bp.blogspot.com/-AiWeyOoQyo8/XCh7CotTU9I/AAAAAAAABSs/JYYTG4mr58shI8nGhnGgyKbOB7NvEIaZQCLcBGAs/s320/78.png"; break;
+		case 79: ogImage = "https://3.bp.blogspot.com/-UDDR9UowrYk/XCh7DP5-7aI/AAAAAAAABSw/z_aN_ic_xiYnGKYTJxenBYCXgb33rO5egCLcBGAs/s320/79.png"; break;
+		case 80: ogImage = "https://2.bp.blogspot.com/-3ktIjUz5T0w/XCh7DuxwwpI/AAAAAAAABS4/0K36jrCxWFYw52n2EQDul_pDKmVZg6jBgCLcBGAs/s320/80.png"; break;
+		case 81: ogImage = "https://4.bp.blogspot.com/-fwYvi7Se5BQ/XCh7D_qmJKI/AAAAAAAABS8/oWAaJMeDq7EdZQ6jk_a6898dChvP9NEOACLcBGAs/s320/81.png"; break;
+		case 82: ogImage = "https://2.bp.blogspot.com/-Nd89CFb17tA/XCh7EGvbbGI/AAAAAAAABTA/K4Uw3beaoSoNh7WnzyR-HzZn6CijSbOnACLcBGAs/s320/82.png"; break;
+		case 83: ogImage = "https://1.bp.blogspot.com/-2dqMKoYZtlM/XCh7EWAE6II/AAAAAAAABTE/myrVOSRpHps75HWrShQthVFQ7usGw6aaACLcBGAs/s320/83.png"; break;
+		case 84: ogImage = "https://3.bp.blogspot.com/-13-4uBoUHUM/XCh7EozU-pI/AAAAAAAABTI/XK-arbXm-SA3pv4GJ7olFV9tpgoZyOqgQCLcBGAs/s320/84.png"; break;
+		case 85: ogImage = "https://3.bp.blogspot.com/-CMcZXu7FzvI/XCh7Ex_90uI/AAAAAAAABTM/8ixdylkvaOs5k2Vi0mtGEUVdk1YJ6wXxACLcBGAs/s320/85.png"; break;
+		case 86: ogImage = "https://3.bp.blogspot.com/-T4sD9lypHSk/XCh7FO3znVI/AAAAAAAABTQ/6_t7_g5ndowViQOU9IEYmcjbbSluo-g1wCLcBGAs/s320/86.png"; break;
+		case 87: ogImage = "https://3.bp.blogspot.com/-SqU6jPEzkoI/XCh7Fk_7eTI/AAAAAAAABTU/1VEvvDYNSr8shXty_pWUAYWjmtK6_x0aQCLcBGAs/s320/87.png"; break;
+		case 88: ogImage = "https://1.bp.blogspot.com/-7xrMofSwaoI/XCh7FtFNHBI/AAAAAAAABTY/3s3Afs9eBMITGUD9Itjy7DCJydBomt4mQCLcBGAs/s320/88.png"; break;
+		case 89: ogImage = "https://4.bp.blogspot.com/-k2CvY75XKfM/XCh7Fx7MWTI/AAAAAAAABTc/polyF8hc3oYckkSh-sR_BO51-DsEzASagCLcBGAs/s320/89.png"; break;
+		case 90: ogImage = "https://3.bp.blogspot.com/-JQhJKuKverE/XCh7GujwbBI/AAAAAAAABTk/t-XYr8vCMBoCoqQNgGM0wZEacNa5pt8DgCLcBGAs/s320/90.png"; break;
+		case 91: ogImage = "https://3.bp.blogspot.com/-JX7lyg1xkgY/XCh7GxQszbI/AAAAAAAABTo/KAJEYso5XpIhIAMSHnrm6EdQfzd2Jp16QCLcBGAs/s320/91.png"; break;
+		case 92: ogImage = "https://2.bp.blogspot.com/-xndSckvvz_U/XCh7HqoYRFI/AAAAAAAABTs/4cC7IqSDmyYtZ7A9kq2Ar0nRessghp4igCLcBGAs/s320/92.png"; break;
+		case 93: ogImage = "https://4.bp.blogspot.com/-FmTiOl5K0XU/XCh7H4a5qkI/AAAAAAAABTw/q0CLLRvEiGUyBzA1Iczz10bdKYxcbHCiQCLcBGAs/s320/93.png"; break;
+		case 94: ogImage = "https://3.bp.blogspot.com/-34pawMAYPJA/XCh7H16Gz0I/AAAAAAAABT0/FN1BGVW8zeMM878xdfZ2a67qjfsHkxJYACLcBGAs/s320/94.png"; break;
+		case 95: ogImage = "https://4.bp.blogspot.com/-dFgd_howDYw/XCh7IV9_gJI/AAAAAAAABT4/cogqPAeNArQVTrVIHekp5puRyIhTiYpqACLcBGAs/s320/95.png"; break;
+		case 96: ogImage = "https://4.bp.blogspot.com/-C8F2jNLK1IA/XCh7Iofw8hI/AAAAAAAABT8/54zyxc45pOw4GfZizYDHEN3cwle2lNchACLcBGAs/s320/96.png"; break;
+		case 97: ogImage = "https://1.bp.blogspot.com/-MxhWHHq1u6A/XCh7I2FpceI/AAAAAAAABUA/EVKs30xWPSklPr0YH6sydfcMHavescPJwCLcBGAs/s320/97.png"; break;
+		case 98: ogImage = "https://3.bp.blogspot.com/-63lwDqUApx8/XCh7JD9BvhI/AAAAAAAABUE/TDIkUfvX_Qc8EMWmulj6cGb17-utNxzQwCLcBGAs/s320/98.png"; break;
+		case 99: ogImage = "https://1.bp.blogspot.com/-uTeSLrwu5Ro/XCh7JYcEmdI/AAAAAAAABUI/YnQhpyQ7T8sQWVNlVObkDH6gCDTpqccggCLcBGAs/s320/99.png"; break;
+		case 100: ogImage = "https://1.bp.blogspot.com/-Zc3HbbSAxx8/XCh6sW3yeeI/AAAAAAAABOE/Pyl2Lg3i31Yt_-8VfQc1qs66fZFL1kb1ACLcBGAs/s320/100.png"; break;				
+		default: ogImage = "";
 	}
 	console.log(score);
 	console.log(ogImage);
