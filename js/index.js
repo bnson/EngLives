@@ -157,7 +157,7 @@ function debug(){
 //-- OLD ---------------------
 function getScore() {
 	
-	var score = 0;
+	score = 0;
 	var quest = $("#quiz ul");
 	var chois = $("#quiz ul li input"); 		
 	var answer = $("#quiz ul li"); 	
