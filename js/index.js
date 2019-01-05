@@ -153,12 +153,12 @@ function debug(){
   
 };
 //-------------------------------------------------------
-function sharefbimage() {
+function sharefbimage(title, description) {
 	ogUrl = window.location.href;
 	ogUrl = ogUrl.replace('#modal','');
 	console.log(ogUrl);
-	ogTitle = "ETS TEST 1000";
-	ogDescription = ogUrl;
+	ogTitle = title;
+	ogDescription = description;
 	ogImage = "";
 
 	switch(score) {
