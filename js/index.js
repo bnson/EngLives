@@ -158,13 +158,13 @@ function debug(){
 function getScore() {
 	
 	score = 0;
-	var quest = $("#quiz ul");
+	var quest = $("#quiz ul li input[0]");
 	var chois = $("#quiz ul li input"); 		
 	var answer = $("#quiz ul li input"); 	
 
 	for (i=0; i<chois.length; i++) {
 		
-		answer.eq(i).css({'color':''}); 
+		answer.eq(i).parent().css({'color':''}); 
 		if (chois[i].checked == true && chois[i].value == "1") {
 			score++;
 		}
