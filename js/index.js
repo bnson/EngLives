@@ -158,7 +158,7 @@ function debug(){
 function getScore() {
 	
 	score = 0;
-	var quest = $("#quiz ul li > input:first-child");
+	var quest = $("#quiz ul li:first-child > input:first-child");
 	var chois = $("#quiz ul li input"); 		
 	var answer = $("#quiz ul li input"); 	
 
@@ -170,14 +170,13 @@ function getScore() {
 		}
 
 		if (chois[i].checked == true && chois[i].value == "0") {
-			console.log('-------------------------------');
-			console.log(answer.eq(i).parent());
 			answer.eq(i).parent().css({'color':'#ff0000'}); 
 		}
 		
 		
 	}			
 	
+	console.log('-------------------------------');
 	score = Math.round(score/quest.length*100);
 	$("#modal1Desc").html(score + "%")
 
