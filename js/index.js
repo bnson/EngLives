@@ -158,7 +158,7 @@ function debug(){
 function getScore() {
 	
 	score = 0;
-	var quest = $("#quiz ul li input[0]");
+	var quest = $("#quiz ul li > input:first-child");
 	var chois = $("#quiz ul li input"); 		
 	var answer = $("#quiz ul li input"); 	
 
