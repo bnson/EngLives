@@ -160,7 +160,7 @@ function getScore() {
 	score = 0;
 	var quest = $("#quiz ul");
 	var chois = $("#quiz ul li input"); 		
-	var answer = $("#quiz ul li"); 	
+	var answer = $("#quiz ul li input"); 	
 
 	for (i=0; i<chois.length; i++) {
 		
@@ -170,7 +170,7 @@ function getScore() {
 		}
 
 		if (chois[i].checked == true && chois[i].value == "0") {
-			answer.eq(i).css({'color':'#ff0000'}); 
+			answer.eq(i).prev().css({'color':'#ff0000'}); 
 		}
 		
 		
