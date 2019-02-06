@@ -170,7 +170,9 @@ function getScore() {
 		}
 
 		if (chois[i].checked == true && chois[i].value == "0") {
-			answer.eq(i).prev().css({'color':'#ff0000'}); 
+			console.log('-------------------------------');
+			console.log(answer.eq(i).parent());
+			answer.eq(i).parent().css({'color':'#ff0000'}); 
 		}
 		
 		
